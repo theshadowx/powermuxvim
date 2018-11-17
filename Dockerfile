@@ -29,6 +29,10 @@ ADD .vimrc     $HOME/
 ADD .bashrc    $HOME/
 ADD .tmux.conf $HOME/
 
+RUN mkdir -p ~/.vim/autoload/ &&\
+    wget -O ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim &&\
+    vim +'PlugInstall --sync' +qa
+
 RUN pip3 install --user git+git://github.com/powerline/powerline
 
 CMD ["tmux", "-2u"]
