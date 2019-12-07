@@ -43,7 +43,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'      "gruvbox color scheme
 Plug 'scrooloose/nerdtree'  "NerdTree
 Plug 'Yggdroot/indentLine'  "Indent line
-Plug 'ctrlpvim/ctrlp.vim'   "ctrlp fuzzy file search
 
 call plug#end()
 
@@ -60,8 +59,5 @@ nmap <F6> :NERDTreeToggle<CR>
 
 "IndentLine
 let g:indentLine_char="\u2502"
-
-"CtrlP
-set runtimepath^=~/.vim/plugged/ctrlp.vim
 
 
