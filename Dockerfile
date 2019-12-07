@@ -29,7 +29,8 @@ ADD .vimrc     $HOME/
 ADD .bashrc    $HOME/
 ADD .tmux.conf $HOME/
 
-RUN sudo chmod 644 $HOME/.vimrc $HOME/.bashrc $HOME/.tmux.conf
+RUN sudo chown devdocker:devdocker $HOME/.vimrc $HOME/.bashrc $HOME/.tmux.conf &&\
+    sudo chmod 644 $HOME/.vimrc $HOME/.bashrc $HOME/.tmux.conf
 
 RUN mkdir -p ~/.vim/autoload/ &&\
     wget -O ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim &&\
