@@ -43,6 +43,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'      "gruvbox color scheme
 Plug 'scrooloose/nerdtree'  "NerdTree
 Plug 'Yggdroot/indentLine'  "Indent line
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
