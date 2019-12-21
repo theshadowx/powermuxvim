@@ -7,7 +7,7 @@ This image is base on Ubuntu 18.04 LTS
 * [gruvbox](https://github.com/morhetz/gruvbox)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [indentline](https://github.com/Yggdroot/indentLine)
-* [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
+* [fzf](https://github.com/junegunn/fzf.vim)
 
 ### How To
 To use this image :
