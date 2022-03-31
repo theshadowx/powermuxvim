@@ -1,3 +1,5 @@
+![example workflow](https://github.com/theshadowx/powermuxvim/actions/workflows/docker-image.yml/badge.svg)
+
 # powermuxvim \[WIP\]
 Docker Image for TMux + Vim + Bash with powerline 
 
