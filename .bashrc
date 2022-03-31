@@ -101,10 +101,10 @@ fi
 # required to make powerline work for bash
 export PATH=$HOME/.local/bin:$PATH
 export POWERLINE_COMMAND=powerline 
-if [ -f $HOME/.local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh ]; then
+if [ -f $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh ]; then
     powerline-daemon -q
     POWERLINE_BASH_CONTINUATION=1
     POWERLINE_BASH_SELECT=1
-    source $HOME/.local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
+    source $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
 fi
 
