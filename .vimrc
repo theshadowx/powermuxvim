@@ -24,7 +24,7 @@ set expandtab
 set noshowmode
 set laststatus=2
 set t_Co=256
-set rtp+=$HOME/.local/lib/python3.6/site-packages/powerline/bindings/vim
+set rtp+=$HOME/.local/lib/python3.8/site-packages/powerline/bindings/vim
 
 "---------------------------------------
 :set number relativenumber
