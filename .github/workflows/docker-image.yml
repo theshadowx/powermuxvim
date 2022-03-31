@@ -27,5 +27,5 @@ jobs:
       with:
           context: .
           push: true
-          tags: theshadowx/powermuxvim:latest      
+          tags: theshadowx/powermuxvim     
         
