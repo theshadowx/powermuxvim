@@ -37,7 +37,7 @@ RUN mkdir -p ~/.vim/autoload/ &&\
     vim +'PlugInstall --sync' +qa
 
 RUN source $HOME/.bashrc &&\
-    pip3 install --user git+git://github.com/powerline/powerline
+    pip3 install --user git+https://github.com/powerline/powerline
 
 CMD ["tmux", "-2u"]
 
