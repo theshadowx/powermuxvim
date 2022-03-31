@@ -1,7 +1,7 @@
 # powermuxvim \[WIP\]
 Docker Image for TMux + Vim + Bash with powerline 
 
-This image is base on Ubuntu 18.04 LTS
+This image is base on Ubuntu 20.04 LTS
 
 ### Vim plugins:
 * [gruvbox](https://github.com/morhetz/gruvbox)
