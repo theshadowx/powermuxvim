@@ -98,6 +98,11 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+#---------------------------------------------------------------------
+# enable usage vim command in bash
+set -o vi
+
+#---------------------------------------------------------------------
 # required to make powerline work for bash
 export PATH=$HOME/.local/bin:$PATH
 export POWERLINE_COMMAND=powerline 
