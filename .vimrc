@@ -36,6 +36,29 @@ set rtp+=$HOME/.local/lib/python3.8/site-packages/powerline/bindings/vim
 :augroup END   
 
 "---------------------------------------
+" disable arrows
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+"---------------------------------------
+" move between tmux and vim
+function! TmuxMove(direction)
+  let wnr = winnr()
+  silent! execute 'wincmd ' . a:direction
+  " If the winnr is still the same after we moved, it is the last pane
+  if wnr == winnr()
+          call system('tmux select-pane -' . tr(a:direction, 'phjkl', 'lLDUR'))
+  end
+endfunction
+
+nnoremap <silent> <c-h> :call TmuxMove('h')<cr>
+nnoremap <silent> <c-j> :call TmuxMove('j')<cr>
+nnoremap <silent> <c-k> :call TmuxMove('k')<cr>
+nnoremap <silent> <c-l> :call TmuxMove('l')<cr>
+
+"---------------------------------------
 "Plugins install (vim-plug)
 "----------------------------------------
 call plug#begin('~/.vim/plugged')
@@ -62,4 +85,6 @@ nmap <F6> :NERDTreeToggle<CR>
 "IndentLine
 let g:indentLine_char="\u2502"
 
-
+"---------------------------------------
+"remove trailing space whenever :w is executed
+autocmd BufWritePre * %s/\s\+$//e
