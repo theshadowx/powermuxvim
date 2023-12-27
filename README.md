@@ -1,4 +1,4 @@
-![example workflow](https://github.com/theshadowx/powermuxvim/actions/workflows/docker-image.yml/badge.svg)
+[![Docker Image CI](https://github.com/theshadowx/powermuxvim/actions/workflows/docker-image.yml/badge.svg)](https://github.com/theshadowx/powermuxvim/actions/workflows/docker-image.yml)
 
 # powermuxvim \[WIP\]
 Docker Image for TMux + Vim + Bash with powerline 
