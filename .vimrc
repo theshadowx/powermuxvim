@@ -68,6 +68,8 @@ Plug 'scrooloose/nerdtree'  "NerdTree
 Plug 'Yggdroot/indentLine'  "Indent line
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
 
 call plug#end()
 
