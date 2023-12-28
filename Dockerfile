@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:latest
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
@@ -11,6 +11,8 @@ RUN apt-get update           && \
             wget                \
             vim                 \
             tmux                \
+            zip                 \
+            curl                \
             python3-pip      && \
     apt clean
  
@@ -24,7 +26,7 @@ RUN adduser --disabled-password --gecos "" devdocker &&\
 USER devdocker
 ENV HOME /home/devdocker
 WORKDIR  /home/devdocker
-
+            
 ADD .vimrc     $HOME/
 ADD .bashrc    $HOME/
 ADD .tmux.conf $HOME/
